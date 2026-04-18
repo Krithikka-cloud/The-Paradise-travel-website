@@ -73,6 +73,27 @@ header{
     border-radius: 20px;
     margin: 10px 20px;
 }
+.slider{
+    display: flex;
+    width: max-content;
+    gap: 10px;
+}
+.slider-left{
+    animation: moveLeft 30s linear infinite;
+    scroll-behavior: smooth;
+}
+
+@keyframes moveLeft{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-50%);
+    }
+}
+.slider:hover{
+    animation-play-state: paused;
+} 
 .img1{
     background-image: url(./img/explore/img1.avif);
 }
@@ -286,6 +307,11 @@ header{
     background-image: url(./img/explore/vs30.avif);
 }
 
+.text{
+    text-align: center;
+    width: 270px;
+}
+
 .footer{
     background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)), url("./img/footer.png");
     background-size: cover;
@@ -398,9 +424,6 @@ header{
         height: 320px;
         /* margin-right: 30px; */
     }
-    .text{
-        margin: 0px 20px;
-    }
 }
 
 /* md  */
@@ -409,9 +432,6 @@ header{
         width: 280px;
         height: 280px;
         /* margin-right: 30px; */
-    }
-    .text{
-        margin: 0px 20px;
     }
 }
 
@@ -422,9 +442,6 @@ header{
         height: 290px;
         /* margin-right: 30px; */
     }
-    .text{
-        margin: 0px 20px;
-    }
 }
 
 /* xl  */
@@ -434,9 +451,6 @@ header{
         height: 290px;
         /* margin-right: 30px; */
     }
-    .text{
-        margin: 0px 20px;
-    }
 }
 
 /* xxl */
@@ -445,8 +459,5 @@ header{
         width: 250px;
         height: 250px;
         /* margin-right: 30px; */
-    }
-    .text{
-        margin: 0px 20px;
     }
 }

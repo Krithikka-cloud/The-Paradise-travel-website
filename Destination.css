@@ -50,7 +50,6 @@ header{
     grid-template-columns: repeat(4,1fr);
     margin-bottom: 30px;
     /* margin-left: 30px; */
-    perspective: 5000px;
 }
 .card{
     width: 300px;
@@ -61,11 +60,7 @@ header{
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
-    transition: transform 0.3s;
     cursor: pointer;
-}
-.card:hover{
-    transform: translateZ(100px);
 }
 .card1{
     background-image: url(./img/Destination/img1.avif);
