@@ -210,12 +210,15 @@ header{
 }
 
 /* xs */
-@media(min-width:300px) and (max-width:575.98px){
+@media(max-width:575.98px){
     html{
         width: 575px;
     }
     .content h1{
         font-size: 26px;
+    }
+    .btn{
+        width: 150px;
     }
     .row{
     display: flex;
