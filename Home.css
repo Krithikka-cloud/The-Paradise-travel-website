@@ -220,6 +220,9 @@ header{
     .btn{
         width: 150px;
     }
+    .card{
+        height: 440px;
+    }
     .row{
     display: flex;
     flex-direction: column;
