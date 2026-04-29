@@ -56,10 +56,14 @@ header{
     margin: auto;
     scrollbar-width: none;
 }
-.place{
-    cursor: pointer;
+.arrow{
+    color: #222222;
 }
-.place p{
+.places{
+    cursor: pointer;
+    overflow: hidden;
+}
+.places p{
     text-align: center;
     font-family: "Poppins", sans-serif;
     color: #222222;
